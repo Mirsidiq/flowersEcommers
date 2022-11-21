@@ -1,0 +1,122 @@
+@import "../../generals/colors.scss";
+
+.header-top{
+    background-color: $black;
+    height: 50px;
+    padding: 15px 0;
+}
+.header-top__container{
+    display: flex;
+    justify-content: space-between;
+}
+.header-top__left{
+    width: 100%;
+    max-width: 1010px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.header-top__items,
+.header-top__select,
+.header-top__items a{
+    color: $white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    vertical-align: middle;
+}
+.header-top__items+.header-top__items{
+    margin-left: 10px;
+}
+.header-top__items a{
+    text-decoration: none;
+}
+.header-top__items img{
+    vertical-align: middle;
+    margin-right: 12px;
+}
+.header-top__select{
+    color: $primary-pink;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 12px;
+}
+.header-top__heart{
+    position: relative;
+    margin-right: 10px;
+}
+.header-top__heart img{
+    vertical-align: bottom;
+}
+.header-top__circle{
+    font-size: 12px;
+    font-weight: 700;
+    content: "";
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    left:13px;
+    top:-2px;
+    width:16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba($white,.7);
+    color: #414141;
+}
+.header-top__right{
+    margin-left: 20px;
+}
+.header-top__right,
+.header-top__login{
+    display: flex;
+    align-items: center;
+}
+.header-top__register,
+.header-top__login{
+    color: $white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.header-top__login{
+    border-right: 1px solid $primary-pink;
+    padding-right:10px;
+    margin-right: 10px;
+}
+.header-top__login img{
+    margin-right: 10px;
+}
+
+@media only screen and (max-width:1024px){
+    .header-top__items,
+.header-top__select,
+.header-top__items a,
+.header-top__register,
+.header-top__login{
+    font-size: 14px;
+}
+}
+@media only screen and (max-width:930px){
+    .header-top__items img,
+    .header-top__heart{
+        display: none;
+    }
+}
+@media only screen and (max-width:870px){
+    .header-top__login img{
+        display: none;
+    }
+}
+@media only screen and (max-width:820px){
+    .header-top__right{
+        margin-left: 10px;
+    }
+    .header-top__select{
+        margin-left: 8px;
+    }
+}
