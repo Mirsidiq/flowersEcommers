@@ -1,0 +1,12 @@
+@import  "../../generals/colors.scss";
+#button {
+  font-family: 'Museo Sans Cyrl';
+  position: relative;
+  background: #956d84;
+  box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  color: $white;
+  overflow: hidden;
+}
