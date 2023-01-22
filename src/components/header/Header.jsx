@@ -14,6 +14,8 @@ import facebook from "../../assets/images/facebook.svg";
 import heartLogo from "../../assets/images/heart-big.svg";
 import miniLogo from "../../assets/images/mobile-logo.png";
 import headerBasket from "../../assets/images/basket-desktop.svg"
+import basketMini from "../../assets/images/basket.svg"
+import toggleLogo from "../../assets/images/toggle.svg"
 import Modal from "../modal/Modal";
 import { useState } from "react";
 import {NavLink} from "react-router-dom"
@@ -24,7 +26,7 @@ function Header() {
       <div className="container header-top__container">
         <ul className="header-top__left">
           <li className="header-top__items">
-            Валюта
+            <span className="header-top__item__hidden">Валюта</span>
             <select className="header-top__select">
               <option value="0">Грн</option>
               <option value="1">Rubl</option>
@@ -32,7 +34,7 @@ function Header() {
             </select>
           </li>
           <li className="header-top__items">
-            Язык
+          <span className="header-top__item__hidden">Валюта</span>
             <select className="header-top__select">
               <option value="0">Ru</option>
               <option value="1">Uzb</option>
@@ -76,12 +78,45 @@ function Header() {
             Регистрация
           </a>
         </div>
+        <select className="header-top__select header-top__select__hidden">
+              <option value="0">Грн</option>
+              <option value="1">Rubl</option>
+              <option value="2">Sum</option>
+            </select>
+            <a href="#" className="header-top__deliver__hidden">
+              <img src={bus} alt="bus logo" />
+              Доставка и оплата
+            </a>
+        
+        <select className="header-top__select header-top__select__hidden">
+              <option value="0">Ru</option>
+              <option value="1">Uzb</option>
+              <option value="2">Eng</option>
+        </select>
       </div>
       <div className="container">
+        <div className="header-bottom__hidden">
+        <a href="#" className="header-bottom__toggle" onClick={()=>setToggle(!toggle)}>
+          <img src={toggleLogo} alt="header toggle logo" />
+        </a>
+        <a href="#" className="header-bottom__logo" >
+          <picture>
+          <source media="(max-width:780px)" srcSet={miniLogo} />
+          <img src={headerLogo} alt="header logo"/>
+          </picture>
+        </a>
+        <div className="header-bottom__hidden__search">
+          <img src={searchLogo} alt="search logo" />
+          <span className="header-bottom__hidden__basket">
+            <img src={basketMini} alt="mobile basket" />
+            <span className="header-bottom__hidden__basket__count">2</span>
+          </span>
+        </div>
+        </div>
       <div className="header-bottom">
         <a href="#" className="header-bottom__logo" >
           <picture>
-          <source media="(max-width:700px)" srcSet={miniLogo} />
+          <source media="(max-width:780px)" srcSet={miniLogo} />
           <img src={headerLogo} alt="header logo"/>
           </picture>
         </a>

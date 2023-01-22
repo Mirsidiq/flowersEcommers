@@ -1,7 +1,6 @@
 @import "../../generals/colors.scss";
 .header-modal,
 .header-modal-active{
-    display: none;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -17,7 +16,6 @@
 
 .header-modal-active{
     transform: translateX(0);
-    
 }
 .header-modal__top{
     display: flex;

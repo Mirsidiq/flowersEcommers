@@ -2,6 +2,7 @@ import React from 'react'
 import Menu from "../mobileMenu/Menu"
 import "./modal.scss"
 export default function Modal({toggle,setToggle}) {
+  console.log(toggle);
   return (
     <div className={toggle ? 'header-modal-active' :'header-modal'}>
         <div className="header-modal__top">

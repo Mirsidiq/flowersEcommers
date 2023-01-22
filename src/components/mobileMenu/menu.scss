@@ -2,6 +2,9 @@
 .mobile-menu{
     background-color: #fff;
 }
+.mobile-menu-inactive{
+    display: none;
+}
 .mobile-menu__top{
     display: flex;
     justify-content: space-between;

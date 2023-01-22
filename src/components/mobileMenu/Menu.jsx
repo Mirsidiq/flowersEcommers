@@ -14,7 +14,7 @@ export default function Menu() {
   const [country,setCountry]=useState(false)
   const [countryName,setCountryName]=useState("Kiyev")
   return (
-    <div className="mobile-menu">
+    <div className={'mobile-menu'}>
       <div className="mobile-menu__top">
         <div className="mobile-menu__contact">
           <span className="mobile-menu__tel">+38 (067) 829 30 30</span>
