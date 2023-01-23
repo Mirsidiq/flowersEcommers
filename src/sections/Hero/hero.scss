@@ -1,0 +1,108 @@
+@import "../../generals/colors.scss";
+.hero{
+    background-color: #fff;
+}
+.hero__inner,
+.hero__inner__wrapper2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+}
+.hero__inner__wrapper{
+    position: relative;
+    max-width: 700px;
+    max-height: 670px;
+}
+.hero__inner__img{
+    width: 100%;
+    object-fit: cover;
+}
+.hero__inner__wrapper2{
+    gap: 20px;
+}
+.hero__inner__wrapper2__content{
+    position: relative;
+}
+.hero__inner__img__txt,
+.hero__inner__big__txt{
+    position: absolute;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 40px;
+   top: 40px;
+   color: $black;
+}
+.hero__inner__img__txt{
+    left: 20px;
+}
+.hero__inner__big__txt{
+    right: 20px !important;
+}
+.hero__inner__big__txt,
+.hero__inner__img__txt-mark{
+    line-height: 50px;
+    max-width:415px;
+}
+.hero__inner__img__txt-mark{
+    font-weight: 300;
+    color: $white;
+}
+@media only screen and (max-width:1120px){
+    .hero__inner__img__txt,
+.hero__inner__big__txt{
+    font-size: 32px;
+    line-height: 38px;
+}
+}
+@media only screen and (max-width:1020px){
+    .hero__inner__img__txt,
+.hero__inner__big__txt{
+    font-size: 28px;
+}
+}
+@media only screen and (max-width:940px){
+    .hero__inner,
+.hero__inner__wrapper2{
+    gap: 16px;
+}
+    .hero__inner__img__txt,
+.hero__inner__big__txt{
+    font-size: 26px;
+    line-height: 30px;
+}
+.hero__inner__big__txt,
+.hero__inner__img__txt-mark{
+    line-height:38px;
+    max-width:350px;
+}
+}
+@media only screen and (max-width:850px){
+    .hero__inner__img__txt,
+.hero__inner__big__txt{
+    font-size: 22px;
+    line-height: 30px;
+}
+}
+@media only screen and (max-width:850px){
+    .hero__inner__big__txt,
+    .hero__inner__img__txt-mark{
+        line-height:30px;
+        max-width:300px;
+    }
+}
+@media only screen and (max-width:740px){
+    .hero__inner{
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0;
+}
+.hero__inner__wrapper{
+    position: relative;
+    max-width: 700px;
+    max-height: 670px;
+}
+.hero__inner__big__txt,
+.hero__inner__img__txt-mark{
+    line-height: 50px;
+    max-width:415px;
+}
+}

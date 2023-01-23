@@ -23,7 +23,7 @@ function Header() {
   const[toggle,setToggle]=useState(false);
   const [searchToggle,setSearchToggle]=useState(false)
   return (
-    <header className="header-top">
+    <header className="header">
       <div className="container header-top__container">
         <ul className="header-top__left">
           <li className="header-top__items">

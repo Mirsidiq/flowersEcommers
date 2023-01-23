@@ -1,13 +1,13 @@
 @import "../../generals/colors.scss";
-
-.header-top{
-    background-color: $black;
-    height: 50px;
-    padding: 15px 0;
+.header{
+   background-color: #fff;
 }
 .header-top__container{
     display: flex;
     justify-content: space-between;
+    background-color: $black;
+    height: 50px;
+    padding: 15px 0;
 }
 .header-top__left{
     width: 100%;
