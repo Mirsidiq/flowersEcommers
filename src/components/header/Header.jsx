@@ -21,6 +21,7 @@ import { useState } from "react";
 import {NavLink} from "react-router-dom"
 function Header() {
   const[toggle,setToggle]=useState(false);
+  const [searchToggle,setSearchToggle]=useState(false)
   return (
     <header className="header-top">
       <div className="container header-top__container">
@@ -106,7 +107,7 @@ function Header() {
           </picture>
         </a>
         <div className="header-bottom__hidden__search">
-          <img src={searchLogo} alt="search logo" />
+          <img src={searchLogo} alt="search logo" onClick={()=>setSearchToggle(!searchToggle)} />
           <span className="header-bottom__hidden__basket">
             <img src={basketMini} alt="mobile basket" />
             <span className="header-bottom__hidden__basket__count">2</span>
@@ -493,7 +494,7 @@ function Header() {
        </div>
       </div>
       </div>
-      <Modal toggle={toggle} setToggle={setToggle}/>
+      <Modal toggle={toggle} setToggle={setToggle} searchToggle={searchToggle} setSearchToggle={setSearchToggle}/>
     </header>
   );
 }
