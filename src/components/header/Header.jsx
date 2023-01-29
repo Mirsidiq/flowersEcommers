@@ -24,6 +24,7 @@ function Header() {
   const [searchToggle,setSearchToggle]=useState(false)
   return (
     <header className="header">
+      <div className="header-top__wrapper">
       <div className="container header-top__container">
         <ul className="header-top__left">
           <li className="header-top__items">
@@ -94,6 +95,7 @@ function Header() {
               <option value="1">Uzb</option>
               <option value="2">Eng</option>
         </select>
+      </div>
       </div>
       <div className="container">
         <div className="header-bottom__hidden">
